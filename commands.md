@@ -1,4 +1,4 @@
-# ChatGPT Commands for Building Game Prototype steps
+# ChatGPT Commands for Building Game Prototype
 
 * write code to construct html webpage
 
