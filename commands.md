@@ -1,6 +1,6 @@
 # ChatGPT Commands for Building Game Prototype
 
-* write code to construct html webpage
+* write code to construct html webpage.
 
 * write code to insert image in html page set src to image/flappy.png then make image height and width 5%. then make border radius 50%. then make it at vertically and horizontally centered of the page and all in same html tag
 
