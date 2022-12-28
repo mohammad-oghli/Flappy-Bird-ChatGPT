@@ -16,7 +16,7 @@ pos_y = halfWindowHeight;
 window.onkeypress = function(event) {
   if (event.code === 'Space') {
     // Update the position vertically here
-  var textElement = document.createElement('div');
+  let textElement = document.createElement('div');
   textElement.textContent = '+50';
   textElement.style.position = 'absolute';
   textElement.style.left = `${flappy.offsetLeft}px`;
@@ -38,7 +38,6 @@ function detectCollision(flappy, wall) {
   // Get the dimensions of the flappy bird and wall
   const flappyRect = flappy.getBoundingClientRect();
   const wallRect = wall.getBoundingClientRect();
-
   // Check if the flappy bird and wall are intersecting
   if (flappyRect.right < wallRect.left || flappyRect.left > wallRect.right || flappyRect.bottom < wallRect.top || flappyRect.top > wallRect.bottom) {
     return false;
@@ -132,7 +131,7 @@ function generatePipes(){
 
 function gameOver(flappy, wall){
     if((detectFlappyExitVertical(flappy) || detectCollision(flappy, wall)) && gameState){
-        var gameOverTag = document.createElement("div");
+        let gameOverTag = document.createElement("div");
         gameOverTag.innerHTML = "Game Over";
         // Set the font size of the label to 50 pixels
         gameOverTag.style.fontSize = '100px';
@@ -144,7 +143,7 @@ function gameOver(flappy, wall){
         gameOverTag.style.top = '50%';
         gameOverTag.style.transform = 'translate(-50%, -50%)';
         document.body.appendChild(gameOverTag);
-        var pressEnterElement = document.createElement("div");
+        let pressEnterElement = document.createElement("div");
         pressEnterElement.textContent = "Press enter to continue";
         pressEnterElement.style.color = "white";
         pressEnterElement.style.fontSize = "50px"
